@@ -1,1 +1,1 @@
-# solana-course
+# solana-training
