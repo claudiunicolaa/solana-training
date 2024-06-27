@@ -58,3 +58,42 @@ Output format should be similar to:
 ```bash
 ✅ Finished! We've loaded our keypair securely, using an env file! Our public key is: CcrogdXjjCrQeCNhdFFioHrj44oygobsGMbsnAYU3MfB
 ```
+
+
+### Lab 2
+
+**Interact with Solana Devnet**
+
+Set the Solana Devnet cluster as the default cluster for the Solana CLI tool:
+```bash
+solana config set --url https://api.devnet.solana.com
+```
+
+Send 1 SOL to the public key generated in Lab 1:
+```bash
+solana airdrop 1 CcrogdXjjCrQeCNhdFFioHrj44oygobsGMbsnAYU3MfB
+```
+
+Run 
+```bash
+npx esrun check-balance.ts
+```
+
+Output format should be similar to:
+
+```bash
+connected to devnet
+devnet url https://api.devnet.solana.com
+public key CcrogdXjjCrQeCNhdFFioHrj44oygobsGMbsnAYU3MfB
+balance for wallet CcrogdXjjCrQeCNhdFFioHrj44oygobsGMbsnAYU3MfB is 1 SOL
+```
+
+**Import account to Phantom wallet**
+
+Run 
+```bash
+npx esrun secretkey-to-b58.ts
+```
+
+Copy the output and import it to the [Phantom wallet](https://help.phantom.app/hc/en-us/articles/15079894392851-Importing-an-Existing-Wallet-into-Phantom).
+
