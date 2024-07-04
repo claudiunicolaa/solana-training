@@ -97,3 +97,22 @@ npx esrun secretkey-to-b58.ts
 
 Copy the output and import it to the [Phantom wallet](https://help.phantom.app/hc/en-us/articles/15079894392851-Importing-an-Existing-Wallet-into-Phantom).
 
+
+### Lab 3
+
+**Send SOL from an account to another**
+
+Run
+```bash
+npx esrun transfer.ts
+```
+
+Output format should be similar to:
+```bash
+Sender balance: 12.699985 SOL
+Reciever balance: 0.3 SOL
+✅ Transaction confirmed, signature 53odoArL45T8BfWcRhGFcfUUSrpD6yrWEHSR3LWVfDwSLSPNS47DnbrvFjf5azZ9sY6PNoFit9XHP7juPA6hmb7b
+Sender balance: 12.59998 SOL
+Reciever balance: 0.4 SOL
+```
+  
