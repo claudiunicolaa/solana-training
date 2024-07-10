@@ -115,4 +115,67 @@ Reciever balance: 0.3 SOL
 Sender balance: 12.59998 SOL
 Reciever balance: 0.4 SOL
 ```
-  
+
+### Lab 4
+
+**Make and transfer Tokens**
+
+*Notice: Solana does not require you to deploy a new contract for each token created. Instead, the Token Program will create and mint tokens on behalf of you.*
+
+![alt text](image.png)
+
+#### Create Mint Account
+
+Defines a specific token. It has its own address where all the token details are stored.
+
+Run for creating a new token mint account:
+```bash
+npx esrun create-token-mint.ts
+```
+
+Output format should be similar to:
+```bash
+Token mint address: CzqfFRrnLBrqFvbgLzSLXDNhF4z6YS94zjdEc2hFXJYX
+```
+
+#### Create Token Account
+
+Defines the ownership of a specific token. It has its own address.
+
+Run for creating a new token account for the mint:
+```bash
+npx esrun create-token-account.ts
+```
+
+Output format should be similar to:
+```bash
+Token account address: 28qkpCHX5LjUdq4HzW7Rn7LFqZmxKjM6AXx1S8YsEQp3
+```
+
+#### Mint Tokens
+
+Run for minting tokens:
+```bash
+npx esrun mint-tokens.ts
+```
+
+Output format should be similar to:
+```bash
+Transaction signature 1: 3DNWhn3dRutkwG9KzK2bsRRn1zHDjkGgxDnVEksH5fZRvXB28s5V6fuzpvwo6uDbPA7WVMMUKUWhPcfAeTDmNTg5
+Transaction signature 2: UXkGYYBFgCHWwi1TSRVPMkarJn6v5UEZUhF6T8seaQFL9JVjMYcweEim8CnZuktdBvuX1L55HiaBxtsxe3oFt8p
+```
+
+First transaction is for minting 100 tokens to previously created token account. 
+Second transaction is for minting 100 tokens to a random token account.
+
+#### Transfer custom tokens
+
+Run for transferring custom tokens:
+```bash
+npx esrun transferCustomTokens.ts
+```
+
+Output format should be similar to:
+```bash
+npx esrun transferCustomTokens.ts
+```
