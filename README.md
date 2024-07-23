@@ -179,3 +179,44 @@ Output format should be similar to:
 ```bash
 npx esrun transferCustomTokens.ts
 ```
+
+
+#### Account relationship:
+![alt text](image-1.png)
+
+### Lab 5
+
+**Make and transfer NFTs**
+
+```bash
+cd lab5
+```
+
+Run for creating a new NFT:
+```bash
+npx esrun lab5/create-nft.ts
+```
+
+Output format should be similar to:
+```bash
+Uploading metadata...
+Metadata uploaded successfully! URI:  https://arweave.net/CjpvzZXbkYNYTbBzX3TgibnoNKqlpXhwAJzK0VtfChU
+Creating NFT...
+Token Mint: https://explorer.solana.com/address/42XrPr3HGEwqiYdoo48FawPyyHjy4X54HB7qjrziUY34?cluster=devnet
+Finished successfully
+```
+
+Run for updating the NFT:
+```bash
+npx esrun lab5/update-nft.ts
+```
+
+Output format should be similar to:
+```bash
+Uploading metadata...
+Metadata uploaded successfully! URI:  https://arweave.net/3BIe0l3M4cXmmlLY9_WhMCAGVSSTyz_N5LTvzL6KE_M
+Updating NFT URI...
+Token Mint: https://explorer.solana.com/address/42XrPr3HGEwqiYdoo48FawPyyHjy4X54HB7qjrziUY34?cluster=devnet
+Transaction: https://explorer.solana.com/tx/Cc122BeufcCn6VveM4BeUmW1sM4BgZTPBunYoLsigfaiP4wMrRDtzSGBRoTgoSo4wVm5maAt9gt3JnnxKgZzXa7?cluster=devnet
+Finished successfully
+```
