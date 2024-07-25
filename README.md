@@ -216,3 +216,28 @@ Token Mint: https://explorer.solana.com/address/42XrPr3HGEwqiYdoo48FawPyyHjy4X54
 Transaction: https://explorer.solana.com/tx/Cc122BeufcCn6VveM4BeUmW1sM4BgZTPBunYoLsigfaiP4wMrRDtzSGBRoTgoSo4wVm5maAt9gt3JnnxKgZzXa7?cluster=devnet
 Finished successfully
 ```
+
+### Lab 6 
+
+### Lab 7
+
+### Lab 8
+
+**First custom Solana Program built with Anchor**
+
+*A simple program that sets favorite number, color, and hobbies to an account.*
+
+Go to the `lab8` directory:
+```bash
+cd lab8
+```
+
+Build the program:
+```bash
+anchor build
+```
+
+Run the tests:
+```bash
+anchor test
+```
