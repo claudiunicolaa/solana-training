@@ -15,7 +15,7 @@
 Run 
 
 ```bash
-npx esrun generate-keypair.ts
+npx esrun lab1/generate-keypair.ts
 ```
 
 Output format should be similar to:
@@ -50,7 +50,7 @@ SECRET_KEY=[
 
 Run 
 ```bash
-npx esrun load-keypair.ts
+npx esrun lab1/load-keypair.ts
 ```
 
 Output format should be similar to:
@@ -76,7 +76,7 @@ solana airdrop 1 CcrogdXjjCrQeCNhdFFioHrj44oygobsGMbsnAYU3MfB
 
 Run 
 ```bash
-npx esrun check-balance.ts
+npx esrun lab2/check-balance.ts
 ```
 
 Output format should be similar to:
@@ -92,7 +92,7 @@ balance for wallet CcrogdXjjCrQeCNhdFFioHrj44oygobsGMbsnAYU3MfB is 1 SOL
 
 Run 
 ```bash
-npx esrun secretkey-to-b58.ts
+npx esrun lab2/secretkey-to-b58.ts
 ```
 
 Copy the output and import it to the [Phantom wallet](https://help.phantom.app/hc/en-us/articles/15079894392851-Importing-an-Existing-Wallet-into-Phantom).
@@ -104,7 +104,7 @@ Copy the output and import it to the [Phantom wallet](https://help.phantom.app/h
 
 Run
 ```bash
-npx esrun transfer.ts
+npx esrun lab3/transfer.ts
 ```
 
 Output format should be similar to:
@@ -130,7 +130,7 @@ Defines a specific token. It has its own address where all the token details are
 
 Run for creating a new token mint account:
 ```bash
-npx esrun create-token-mint.ts
+npx esrun lab4/create-token-mint.ts
 ```
 
 Output format should be similar to:
@@ -144,7 +144,7 @@ Defines the ownership of a specific token. It has its own address.
 
 Run for creating a new token account for the mint:
 ```bash
-npx esrun create-token-account.ts
+npx esrun lab4/create-token-account.ts
 ```
 
 Output format should be similar to:
@@ -156,7 +156,7 @@ Token account address: 28qkpCHX5LjUdq4HzW7Rn7LFqZmxKjM6AXx1S8YsEQp3
 
 Run for minting tokens:
 ```bash
-npx esrun mint-tokens.ts
+npx esrun lab4/mint-tokens.ts
 ```
 
 Output format should be similar to:
@@ -172,12 +172,12 @@ Second transaction is for minting 100 tokens to a random token account.
 
 Run for transferring custom tokens:
 ```bash
-npx esrun transferCustomTokens.ts
+npx esrun lab4/transferCustomTokens.ts
 ```
 
 Output format should be similar to:
 ```bash
-npx esrun transferCustomTokens.ts
+Transaction signature: c9P6YRatVVnsjmPhbArNhAQh1ZPcjnAdnzceJ9ETrNYmpVW9rhZfb9hUctSJxZ9DKD9za5ob2f4UMHXeMRoPmY8
 ```
 
 
@@ -187,10 +187,6 @@ npx esrun transferCustomTokens.ts
 ### Lab 5
 
 **Make and transfer NFTs**
-
-```bash
-cd lab5
-```
 
 Run for creating a new NFT:
 ```bash
