@@ -219,7 +219,17 @@ Finished successfully
 
 ### Lab 6 
 
+An introduction to Rust and a few Rustlings exercises (1-9).
+
 ### Lab 7
+
+An introduction to Anchor and run a dummy program.
+
+```bash
+anchor init temp-project
+cd temp-project
+anchor test
+```
 
 ### Lab 8
 
