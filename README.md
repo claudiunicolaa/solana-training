@@ -2,11 +2,14 @@
 
 ## Pre-requisites
 
-- Node.js v20 or later
-- TypeScript v9 or later
-- npm v10 or later
+- Node.js v18
+- TypeScript v9
+- npm v10
+- yarn v1.22
 - install dependencies with `npm i`
 - create an environment file based on `.env.example` with `cp .env.example .env`
+- Rust v1.79.0 
+- Anchor CLI v0.30.1
 
 ### Lab 1
 
@@ -251,3 +254,35 @@ Run the tests:
 ```bash
 anchor test
 ```
+
+### Lab 9
+
+**Create an Escrow Program**
+
+Go to the `lab9` directory:
+```bash
+cd lab9
+```
+
+Build the program:
+```bash
+anchor build
+```
+
+Run the tests:
+```bash
+anchor test
+```
+
+
+### Lab 10
+
+**Solana Wallet Adapter**
+
+A simple web page that allows a user to:
+- connect wallet (browser extension) 
+- create and sign a transaction that calls a Solana program (Ping Pong program)
+
+Phantom Chrome extension is required for this lab.
+
+See the [README.md](lab10/README.md) file for more information.
