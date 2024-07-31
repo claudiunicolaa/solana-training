@@ -236,7 +236,7 @@ anchor test
 
 ### Lab 8
 
-**First custom Solana Program built with Anchor**
+**First custom Program built with Anchor**
 
 *A simple program that sets favorite number, color, and hobbies to an account.*
 
@@ -257,7 +257,7 @@ anchor test
 
 ### Lab 9
 
-**Create an Escrow Program**
+**Escrow Program**
 
 Go to the `lab9` directory:
 ```bash
